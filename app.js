@@ -11,7 +11,11 @@ var financeController=(function(){
 
 //progrmaiin controller
 var appcontroller=(function(uilcontroller,financeController){
+    var dara=function () {
+    console.log("amjiltta daragdlaa")    
+    }
 document.querySelector(".add__btn").addEventListener("click",function(){
+    dara();
 //oruulah ugugdliig delgetsees avna
 
 
@@ -27,23 +31,9 @@ document.querySelector(".add__btn").addEventListener("click",function(){
 
 });
 document.addEventListener('keypress',function(event){
-console.log(event.keycode)
-// if(event.key==="enter")
-// {
-//     console.log("sdsa")
-    
-// }
-// else
-// {
-//     console.log("nono")
-// }
-    // if(event.keycode==13) {
-//     console.log("enter bn")
-    
-// }
-// else
-// {
-//     console.log("enterneed busad")
-// }
+    if(event.keyCode === 13){
+ dara();
+    }
+
 })
 })(uilcontroller,financeController);
